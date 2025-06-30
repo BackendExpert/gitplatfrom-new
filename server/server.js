@@ -22,8 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/repos', express.static(path.join(__dirname, 'repos')));
 
-app.use('/repos', repoRoute)
+app.use('/repo', repoRoute)
 
 app.get('/', (req, res) => {
     res.send(`Server running on port ${PORT}`);
