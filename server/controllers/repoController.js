@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const { exec } = require('child_process');
 
-const REPOS_ROOT = path.resolve('../repo');
+const REPOS_ROOT = path.resolve('./repo');
 
 const RepoController = {
     createRepo: async (req, res) => {
