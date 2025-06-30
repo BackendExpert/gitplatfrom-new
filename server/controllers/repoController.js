@@ -1,8 +1,7 @@
-import Repo from '../models/Repo.js';
-import User from '../models/User.js';
-import path from 'path';
-import fs from 'fs';
-import { exec } from 'child_process';
+const Repo = require('../models/Repo');
+const path = require('path');
+const fs = require('fs');
+const { exec } = require('child_process');
 
 const REPOS_ROOT = path.resolve('../repo');
 
